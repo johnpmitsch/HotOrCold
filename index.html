@@ -9,17 +9,23 @@
 	</body>
 		<div id=container>
 			<div class=heading>
-				<h1><span id=hot>Hot</span> or <span id=cold>Cold</span></h1>
+				<h1><span class=hot>Hot</span> or <span class=cold>Cold</span></h1>
 			</div>
 			<img id=camel src="http://www.sritweets.com/wp-content/uploads/2010/06/camel.jpg" />
 			<img id=eskimo src="http://thegrumpandthecreep.files.wordpress.com/2010/01/eskimo-me.jpg" />
 			<p class=statement id=statement1> We have selected a number between 1 and 100</p>
 			<p class=statement id=statement2> Take a guess what it is.</p>
+			<p class="statement cold hide" id=igloo>Your guess is colder than my igloo in January!</p>
+			<p class="statement hot hide" id=Sahara>Your guess is hotter than summer in the Sahara!</p>
+			<p class="statement cold hide" id=invalid>You got slush for brains! Read the directions!</p>
+			<p class="statement hide" id=correct>Correct! You got it!</p>
+			<p class="statement hide" id=higher>Guess Higher!</p>
+			<p class="statement hide" id=lower>Guess Lower!</p>
 			<div id=form>
 				<input type="text" name="guess" id="guess" maxlength="3" autocomplete="off">
 				<div class=button id=guessbutton>Guess!</div>
 				<div class=buttonTwo>New Game</div>
-				<div class=buttonTwo>Reset</div>
+				
 			</div>
 		</div>
 	</body>

@@ -15,12 +15,12 @@ $(document).ready(function() {
 		var userGuess = document.getElementById("guess").value;
 		var abs=Math.abs(userGuess-randomNumber);
 		if((userGuess == '') || (isNaN(userGuess)) || (userGuess < 1) || (userGuess > 100)) {	
-			guessResult = 'invalid';	
+			$("#invalid").toggleClass("hide");	
 			};
 		if(abs>15) {
-			guessResult="cold";
+			$("#igloo").toggleClass("hide");
 		} else if ((abs>0)&&(abs<15)) {
-			guessResult="warm";
+			$("#sahara").toggleClass("hide");
 			};
 		if(abs == 0) {
 			guessResult="correct";

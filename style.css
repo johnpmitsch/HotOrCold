@@ -47,28 +47,28 @@ body{
 	letter-spacing: 1px;
 	margin-bottom:100px;
 }
-#hot {
+.hot {
 	color:#ff602b;
 	}
-#cold {
+.cold{
 	color:#5ebcff;
 	}
 #eskimo {
 	float:right;
 	height:150px;
 	border-radius:5px;
-	display:none;
+	/**display:none;**/
 	}
 #camel {
 	float:left;
 	height:150px;
 	border-radius:5px;
-	display:none;
+	/**display:none;**/
 	}
 .statement{
 	font-family:lobster;
 	font-size:25px;
-	display:none;
+	/**display:none;**/
 	}
 #statement2 {
 	font-style:bold;
@@ -169,7 +169,7 @@ body{
 	margin:5px;
 	margin-right:auto;
 	margin-left:auto;
-	display:none;
+	/**display:none;**/
 }
 .buttonTwo:active {
 	position:relative;
@@ -181,7 +181,14 @@ body{
 	margin-right:auto;
 	margin-left:auto;
 }
-#newreset {
+.hide {
 	display:none;
-	display:inline-block;
-	}
+}
+#correct {
+	color:#000099;
+	font-size:35px;
+}
+
+
+	
+	
