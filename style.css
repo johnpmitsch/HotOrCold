@@ -1,0 +1,187 @@
+@font-face {
+ font-family:rockfont;
+ src: url(fonts/rockfont.eot); /* EOT file for IE */
+}
+
+@font-face {
+ font-family:rockfont;
+ src: url(fonts/rockfont.ttf); /* TTF file for CSS3 browsers */
+}
+
+
+@font-face {
+ font-family:lobster;
+ src: url(fonts/lobster_1.3.ttf); /* TTF file for CSS3 browsers */
+}
+@font-face {
+ font-family:lobster;
+ src: url(fonts/lobster_1.3.eot); /* EOT file for IE */
+}
+
+@font-face {
+ font-family:woodshop;
+ src: url(fonts/woodshop-regular.ttf); /* TTF file for CSS3 browsers */
+}
+@font-face {
+ font-family:woodshop;
+ src: url(fonts/woodshop-regular.eot); /* EOT file for IE */
+ }
+
+body{
+	background-color: #f7fad9;
+}
+#container {
+	text-align: center;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.heading {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 45px;
+	font-family:rockfont;
+	color: #000000;
+	text-transform: uppercase;
+	font-style: bold;
+	letter-spacing: 1px;
+	margin-bottom:100px;
+}
+#hot {
+	color:#ff602b;
+	}
+#cold {
+	color:#5ebcff;
+	}
+#eskimo {
+	float:right;
+	height:150px;
+	border-radius:5px;
+	display:none;
+	}
+#camel {
+	float:left;
+	height:150px;
+	border-radius:5px;
+	display:none;
+	}
+.statement{
+	font-family:lobster;
+	font-size:25px;
+	display:none;
+	}
+#statement2 {
+	font-style:bold;
+	font-size:30px;
+	}
+#guess {
+	height: 60px;
+	width: 60px;
+	font-size: 30px;
+	box-shadow: 0px 0px 2px rgba (0,0,0,0.3);
+	border: 2px solid #b0baad;
+	border-radius: 2px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	/**display:none;**/
+	}
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
+	background-color:#63b8ee;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #337fed;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+	margin-top:15px;
+	/**display:none;**/
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+	background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee');
+	background-color:#468ccf;
+}
+.button:active {
+	position:relative;
+	top:1px;
+	}
+.buttonTwo {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+	position:relative;
+	clear:both;
+	margin:5px;
+	margin-right:auto;
+	margin-left:auto;
+	display:none;
+}
+.buttonTwo:active {
+	position:relative;
+	top:1px;
+	}
+#form {
+	height:200px;
+	width:500px;
+	margin-right:auto;
+	margin-left:auto;
+}
+#newreset {
+	display:none;
+	display:inline-block;
+	}
