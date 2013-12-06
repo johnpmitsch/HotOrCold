@@ -188,7 +188,14 @@ body{
 	color:#000099;
 	font-size:35px;
 }
-
-
+.placeholder {
+	height:100px;
+	width:200px;
+	}
+.response{
+	font-family:lobster;
+	font-size:25px;
+	z-index=2;
+	}
 	
 	

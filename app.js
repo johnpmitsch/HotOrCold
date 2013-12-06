@@ -10,21 +10,34 @@ $(document).ready(function() {
 	var randomNumber = Math.floor(Math.random() * 101);
 	var guessResult = 0;
 	var highlow=0;
-
-	$('#guessbutton').click(function() {
-		var userGuess = document.getElementById("guess").value;
+	var userGuess = document.getElementById("guess").value;
+	
+	function checkrange() {
+		if(userguess > 100 || userguess =='') || guess < 1 ) {	
+			$("#invalid").animate({display:block;},400);	
+		} else {
+		}
+	}
+	
+	function hotcold() {
 		var abs=Math.abs(userGuess-randomNumber);
-		if((userGuess == '') || (isNaN(userGuess)) || (userGuess < 1) || (userGuess > 100)) {	
-			$("#invalid").toggleClass("hide");	
-			};
 		if(abs>15) {
 			$("#igloo").toggleClass("hide");
 		} else if ((abs>0)&&(abs<15)) {
 			$("#sahara").toggleClass("hide");
-			};
-		if(abs == 0) {
-			guessResult="correct";
-			};
+		} else if(abs == 0) {
+			$("#correct").toggleClass("hide");
+		};
+	}
+		
+		
+
+	$('#guessbutton').click(function() {
+		
+		
+		checkrange();
+		hotcold();
+		
 		if(userGuess<randomNumber) {
 			highlow=1;
 		} else if (userGuess>randomNumber) {
