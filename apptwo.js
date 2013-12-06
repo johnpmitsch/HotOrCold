@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-	//$('img').fadeIn(3000);
-	//$('#statement1').delay(2000).fadeIn(1000);
-	//$('#statement2').delay(4000).fadeIn(1000);
-	//$('#guess').delay(6000).fadeIn(1000);
-	//$('.button').delay(6000).fadeIn(1000);
-	//$('.buttonTwo').delay(6000).fadeIn(1000);
+	$('img').fadeIn(3000);
+	$('#statement1').delay(2000).fadeIn(1000);
+	$('#statement2').delay(4000).fadeIn(1000);
+	$('#guess').delay(6000).fadeIn(1000);
+	$('.button').delay(6000).fadeIn(1000);
+	$('.buttonTwo').delay(6000).fadeIn(1000);
 		
 		var randomNumber = Math.floor(Math.random() * 101);
 		

@@ -57,18 +57,18 @@ body{
 	float:right;
 	height:150px;
 	border-radius:5px;
-	/**display:none;**/
+	display:none;
 	}
 #camel {
 	float:left;
 	height:150px;
 	border-radius:5px;
-	/**display:none;**/
+	display:none;
 	}
 .statement{
 	font-family:lobster;
 	font-size:25px;
-	/**display:none;**/
+	display:none;
 	}
 #statement2 {
 	font-style:bold;
@@ -83,7 +83,7 @@ body{
 	border-radius: 2px;
 	margin-top: 15px;
 	margin-bottom: 5px;
-	/**display:none;**/
+	display:none;
 	}
 .button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
@@ -119,7 +119,7 @@ body{
 	text-align:center;
 	text-shadow:1px 1px 0px #1570cd;
 	margin-top:15px;
-	/**display:none;**/
+	display:none;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:20px;
@@ -169,7 +169,7 @@ body{
 	margin:5px;
 	margin-right:auto;
 	margin-left:auto;
-	/**display:none;**/
+	display:none;
 }
 .buttonTwo:active {
 	position:relative;
@@ -188,10 +188,6 @@ body{
 	color:#000099;
 	font-size:35px;
 }
-.placeholder {
-	height:100px;
-	width:200px;
-	}
 .response{
 	font-family:lobster;
 	font-size:25px;
