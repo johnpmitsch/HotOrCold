@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Hot or Cold?</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript" src="apptwo.js"></script>
@@ -15,16 +16,10 @@
 			<img id=eskimo src="http://thegrumpandthecreep.files.wordpress.com/2010/01/eskimo-me.jpg" />
 			<p class=statement id=statement1> We have selected a number between 1 and 100</p>
 			<p class=statement id=statement2> Take a guess what it is.</p>
-				<p class="response cold hide" id=igloo>Your guess is colder than my igloo in January!</p>
-				<p class="response hot hide" id=Sahara>Your guess is hotter than summer in the Sahara!</p>
-				<p class="response cold hide" id=invalid>You got slush for brains! Read the directions!</p>
-				<p class="response hide" id=correct>Correct! You got it!</p>
-				<p class="response hide" id=higher>Guess Higher!</p>
-				<p class="response hide" id=lower>Guess Lower!</p>
 			<div id=form>
 				<input type="text" name="guess" id="guess" maxlength="3" autocomplete="off">
 				<div class=button id=guessbutton>Guess!</div>
-				<div class=buttonTwo>New Game</div>
+				<div class=buttonTwo id=newgame>New Game</div>
 				
 			</div>
 		</div>

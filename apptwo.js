@@ -12,37 +12,40 @@ $(document).ready(function() {
 	function getguess() {
 		var guess = document.getElementById("guess").value;
 	}
+	function newgame() {
+		var randomNumber = Math.floor(Math.random() * 101);
+	}
 	function validateguess() {
-		if (guess.value<0 || guess.value>100 || isNaN(guess.value)) {
-			$("#invalid").add("invalid");
-		} else {
-			}
+		if (guess.value<0 || guess.value>100 || isNaN(guess.value) || (guess.value=' ')) {
+			$("#statement1").replaceWith("<p class=statement id=statement1>What, do you have slush for brains?</p>");
+			$("#statement2").replaceWith("<p class=statement id=statement2>Invalid input! Try again.</p>");
+		}
 	}
 	function highlow() {
 		if (guess.value<randomNumber) {
-			$("#higher").toggleClass("hide");
+			$("#statement2").replaceWith("<p class=statement id=statement2>Guess Higher!</p>");
 		} else if (guess.value>randomNumber) {
-			$("#lower").toggleClass("hide");
+			$("#statement2").replaceWith("<p class=statement id=statement2>Guess Lower!</p>");
 		}
 	}
 	function hotcold() {
 		var abs=Math.abs(guess.value-randomNumber);
-		if (abs<15 && abs>0) {
-			$("#Sahara").toggleClass("hide");
-		} else if (abs>15) {
-			$("#igloo").toggleClass("hide");
+		if (abs<12 && abs>0) {
+			$("#statement1").replaceWith("<p class='statement hot' id=statement1>Your guess is hotter than a BBQ in the Sahara!</p>");
+		} else if (abs>12) {
+			$("#statement1").replaceWith("<p class='statement cold' id=statement1>Your guess is colder than my igloo in January!</p>");
 		} else if (abs == 0) {
-			$("#correct").toggleClass("hide");
+			$("#statement1").replaceWith("<p class=statement id=statement1>Correct!!</p>");
+			$("#statement2").replaceWith("<p class=statement id=statement2>You Win!!</p>");
 		}
-	}
-		
+	}	
 	$('#guessbutton').click(function() {
-		$("#invalid","#higher","#lower","#Sahara","#igloo","#correct").css("display:none");
-		
 		getguess();
 		validateguess();
 		highlow();
 		hotcold();
-		alert(randomNumber);
+	});
+	$("#newgame").click(function() {
+		newgame();
 	});
 });	
