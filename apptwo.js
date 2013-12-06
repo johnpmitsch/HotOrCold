@@ -14,29 +14,34 @@ $(document).ready(function() {
 	}
 	function newgame() {
 		var randomNumber = Math.floor(Math.random() * 101);
+		$('#message,#message2').html(" ");
+		$('#guess').val('');
 	}
 	function validateguess() {
-		if (guess.value<0 || guess.value>100 || isNaN(guess.value) || (guess.value=' ')) {
-			$("#statement1").replaceWith("<p class=statement id=statement1>What, do you have slush for brains?</p>");
-			$("#statement2").replaceWith("<p class=statement id=statement2>Invalid input! Try again.</p>");
+		if (guess.value<0 || guess.value>100 || isNaN(guess.value) || (guess.value=="")) {
+			$("#message").html("What do you have slush for brains?! Invalid input!");
+			exit();
 		}
 	}
 	function highlow() {
 		if (guess.value<randomNumber) {
-			$("#statement2").replaceWith("<p class=statement id=statement2>Guess Higher!</p>");
+			$("#message2").html("Guess Higher! ").effect("pulsate", {times:2}, 200);
 		} else if (guess.value>randomNumber) {
-			$("#statement2").replaceWith("<p class=statement id=statement2>Guess Lower!</p>");
+			$("#message2").html("Guess Lower! ").effect("pulsate", {times:2}, 200);
 		}
 	}
 	function hotcold() {
 		var abs=Math.abs(guess.value-randomNumber);
 		if (abs<12 && abs>0) {
-			$("#statement1").replaceWith("<p class='statement hot' id=statement1>Your guess is hotter than a BBQ in the Sahara!</p>");
+			$("#message").html("Your guess is getting hotter than the Sahara!").effect("pulsate", {times:2}, 200);
+			$('#camel').effect( "bounce", "slow" );
 		} else if (abs>12) {
-			$("#statement1").replaceWith("<p class='statement cold' id=statement1>Your guess is colder than my igloo in January!</p>");
+			$("#message").html("Your guess is colder than my igloo in January!").effect("pulsate", {times:2}, 200);
+			$('#eskimo').effect( "bounce", "slow" );
 		} else if (abs == 0) {
-			$("#statement1").replaceWith("<p class=statement id=statement1>Correct!!</p>");
-			$("#statement2").replaceWith("<p class=statement id=statement2>You Win!!</p>");
+			$("#message").html("Correct! You Win!!!").effect("pulsate", {times:2}, 200);
+			$("#message2").html("Congrats!").effect("pulsate", {times:2}, 200);
+			$('#camel,#eskimo').effect( "shake", "slow" );
 		}
 	}	
 	$('#guessbutton').click(function() {
