@@ -13,7 +13,7 @@ $(document).ready(function() {
 		var guess = document.getElementById("guess").value;
 	}
 	function newgame() {
-		var x = Math.floor(Math.random() * 101);
+		randomNumber = Math.floor(Math.random() * 101);
 		$('#message,#message2').html(" ");
 		$('#guess').val('');
 	}
