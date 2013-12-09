@@ -13,7 +13,7 @@ $(document).ready(function() {
 		var guess = document.getElementById("guess").value;
 	}
 	function newgame() {
-		var randomNumber = Math.floor(Math.random() * 101);
+		var x = Math.floor(Math.random() * 101);
 		$('#message,#message2').html(" ");
 		$('#guess').val('');
 	}
@@ -44,11 +44,20 @@ $(document).ready(function() {
 			$('#camel,#eskimo').effect( "shake", "slow" );
 		}
 	}	
-	$('#guessbutton').click(function() {
+	function rungame() {
 		getguess();
 		validateguess();
 		highlow();
 		hotcold();
+	}
+	$('#guessbutton').click(function() {
+		rungame()
+	});
+	$('#guess').keypress(function(e) {
+        if(e.which == 13) {
+			event.preventDefault();
+			rungame();
+	}
 	});
 	$("#newgame").click(function() {
 		newgame();
