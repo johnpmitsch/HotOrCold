@@ -51,7 +51,7 @@ $(document).ready(function() {
 		hotcold();
 	}
 	$('#guessbutton').click(function() {
-		rungame()
+		rungame();
 	});
 	$('#guess').keypress(function(e) {
         if(e.which == 13) {
