@@ -1,11 +1,11 @@
 @font-face {
  font-family:rockfont;
- src: url(fonts/rockfont.eot); /* EOT file for IE */
+ src: url(fonts/RockFont.eot); /* EOT file for IE */
 }
 
 @font-face {
  font-family:rockfont;
- src: url(fonts/rockfont.ttf); /* TTF file for CSS3 browsers */
+ src: url(fonts/RockFont.ttf); /* TTF file for CSS3 browsers */
 }
 
 
